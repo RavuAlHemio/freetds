@@ -48,6 +48,10 @@
 #include <sys/socket.h>
 #endif /* HAVE_SYS_SOCKET_H */
 
+#if HAVE_POLL_H
+#include <poll.h>
+#endif /* HAVE_POLL_H */
+
 #if HAVE_NETINET_IN_H
 #include <netinet/in.h>
 #endif /* HAVE_NETINET_IN_H */
@@ -57,6 +61,7 @@
 #endif /* HAVE_ARPA_INET_H */
 
 #include "pool.h"
+#include "replacements.h"
 
 /* to be set by sig term */
 static int got_sigterm = 0;

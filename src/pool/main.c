@@ -27,10 +27,9 @@
 
 #include <stdarg.h>
 #include <stdio.h>
-#include <unistd.h>
 #include <signal.h>
-#include <fcntl.h>
 #include <errno.h>
+#include <fcntl.h>
 
 #if HAVE_STDLIB_H
 #include <stdlib.h>
